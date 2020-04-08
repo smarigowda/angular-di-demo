@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ProductService, Product } from '../product.service';
 
 @Component({
   selector: 'di-product',
@@ -7,8 +8,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class ProductComponent implements OnInit {
-
-  constructor() { }
+  product: Product;
+  constructor(productService: ProductService) {
+    this.product = productService.getProduct();
+  }
 
   ngOnInit(): void {
   }
