@@ -8,8 +8,8 @@ import { Product1Component } from './product1/product1.component';
 import { Product2Component } from './product2/product2.component';
 import { ProductService } from './product.service';
 // import { RealProductService } from './real.product.service';
-// import { environment } from '../../environments/environment';
-import { environment } from '../../environments/environment.prod';
+import { environment } from '../../environments/environment';
+// import { environment } from '../../environments/environment.prod';
 import { productServiceFactory } from './product.service.factory';
 
 @NgModule({
