@@ -5,7 +5,8 @@ import { ProductService, Product } from '../product.service';
   selector: 'di-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  encapsulation: ViewEncapsulation.ShadowDom,
+  providers: [ProductService],
 })
 export class ProductComponent implements OnInit {
   product: Product;
@@ -13,7 +14,5 @@ export class ProductComponent implements OnInit {
     this.product = productService.getProduct();
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

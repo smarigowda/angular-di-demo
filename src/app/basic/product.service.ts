@@ -9,9 +9,9 @@ export class Product {
   ){}
 }
 
-@Injectable({
-  providedIn: 'root'
-})
+// @Injectable({
+//   providedIn: 'root'
+// })
 export class ProductService {
 
   constructor() { }
